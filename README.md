@@ -23,7 +23,7 @@ sh convert.sh directory
 ```
 or To convert a swf_file -
 ```
-sh conert.sh <path to swf_file>
+sh convert.sh <path to swf_file.swf>
 ```
 
 Happy converting!
