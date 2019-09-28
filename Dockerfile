@@ -8,5 +8,7 @@ RUN apt-get install -y ffmpeg
 RUN mkdir /data
 WORKDIR /data
 ADD swf_to_mp4.sh /
+ADD convert-swf.sh /
 RUN chmod u+x /swf_to_mp4.sh
-ENTRYPOINT ["/swf_to_mp4.sh"]
+RUN chmod u+x /convert-swf.sh
+ENTRYPOINT ["/convert-swf.sh"]
