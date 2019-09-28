@@ -14,7 +14,7 @@ function process_single_file() {
     FILENAME=$(basename "${FULLPATH}")
     echo "Filename: " + $FILENAME
 #    echo "BASEDIR: "+ $BASEDIR
-    docker run -v ${PASSED}:/data dprasad/swf-to-mp4 $swfile
+    docker run --rm -v ${PASSED}:/data dprasad/swf-to-mp4 $swfile
     echo "......File stored as $BASEDIR/${FILENAME%.*}.mp4"
     echo "------------------------------------------------"
 }
